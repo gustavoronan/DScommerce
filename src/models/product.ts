@@ -3,7 +3,7 @@ import { CategoryDTO } from "./category";
 export type ProductDTO = {
     id: number;
     name: string;
-    desciption: string;
+    description: string;
     price: number;
     imgUrl: string;
     categories: CategoryDTO[];

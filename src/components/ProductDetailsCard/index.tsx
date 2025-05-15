@@ -16,7 +16,7 @@ export default function ProductDetailsCard ({productProps}: Props) {
           <h3>R$ {productProps.price.toFixed(2)}</h3>
           <h4>{productProps.name}</h4>
           <p>
-            {productProps.desciption}
+            {productProps.description}
           </p>
           <div className="dsc-category-container">
              {
