@@ -1,6 +1,5 @@
 import ButtonInverse from "../../components/ButtonInverse";
 import ButtonPrimary from "../../components/ButtonPrimary";
-import HeaderClient from "../../components/HeaderClient";
 import ProductDetailsCard from "../../components/ProductDetailsCard";
 import { ProductDTO } from "../../models/product";
 
@@ -31,9 +30,6 @@ const product: ProductDTO = {
 
 export default function ProductDetails(){
     return (
-        <>
-  
-        <HeaderClient></HeaderClient>
         <main>
           <section id="product-details-section" className="dsc-container">
           <ProductDetailsCard productProps = {product}></ProductDetailsCard>
@@ -43,7 +39,5 @@ export default function ProductDetails(){
             </div>
           </section>
         </main>
-        </>
-
     )
 }
