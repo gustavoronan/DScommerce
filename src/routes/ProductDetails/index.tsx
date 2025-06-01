@@ -5,14 +5,14 @@ import ProductDetailsCard from "../../components/ProductDetailsCard";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ProductDTO } from "../../models/product";
-import axios from "axios";
+import * as productService from "../../services/product-service";
 
 export default function ProductDetails() {
   const params = useParams();
   const [product, setProduct] = useState<ProductDTO>();
 
   useEffect(()=> {
-    axios.get(`http://localhost:8080/products/${params.productId}`)
+    productService.findById(Number(params.productId))
     .then(response => {
       setProduct(response.data);
     })
